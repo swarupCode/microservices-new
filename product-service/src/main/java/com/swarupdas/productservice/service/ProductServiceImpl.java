@@ -22,7 +22,7 @@ public class ProductServiceImpl implements ProductService{
     public List<Product> getAllProducts()
     {
         List<Product> productList = productRepository.findAll();
-        if (productList.isEmpty()) throw new ProductNotFoundException("No product found.");
+        if (productList.isEmpty()) throw new ProductNotFoundException("No product is found.");
         return productList;
     }
 
